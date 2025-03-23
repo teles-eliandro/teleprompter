@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléprompteur Hors Ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <!-- Contrôle de vitesse -->
+        <div class="control-group">
+            <label for="speed">Vitesse :</label>
+            <span id="speed-value">50</span> <!-- Affichage dynamique de la valeur -->
+            <input type="range" id="speed" min="1" max="100" value="50">
+        </div>
+
+        <!-- Boutons Démarrer/Arrêter -->
+        <button id="start">Démarrer</button>
+        <button id="stop">Arrêter</button>
+
+        <!-- Contrôle de taille -->
+        <div class="control-group">
+            <label for="font-size">Taille :</label>
+            <span id="font-size-value">32</span> <!-- Affichage dynamique de la valeur -->
+            <input type="range" id="font-size" min="16" max="60" value="32">
+        </div>
+
+        <!-- Police -->
+        <label for="font-family">Police :</label>
+        <select id="font-family">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+
+        <!-- Couleur de fond -->
+        <label for="background-color">Couleur :</label>
+        <input type="color" id="background-color" value="#000000">
+    </div>
+
+    <div id="text">
+        **🎯 Introduction (1 min)**  
+        *Bonjour, [pause légère]*  
+        Je suis **JUju**, ou **juba**, Directrice Artistique depuis **14 ans**. *Sourire léger.*  
+        Aujourd’hui, je vous présente un projet qui marque une étape importante dans mon parcours : j’ai suivi une formation pour intégrer l’UX design à ma démarche créative, avec pour objectif d’évoluer vers des postes de **UX/UI designer**.  
+        
+        Le projet que je vais vous présenter s’appelle **AILIA**. C’est une application qui vise à **faciliter l’accès aux appareillages orthopédiques adaptés** pour les personnes en situation de handicap. *[Pause légère, regard engageant.]*  
+        
+        ---
+        
+        **🚀 Le Design Sprint (1 min)**  
+        Avant de rentrer dans le cœur du projet, il est important de comprendre la méthode que nous avons suivie : le **Design Sprint**.  
+        Ce processus intensif de **5 jours** permet de passer d’une idée à un prototype testé auprès des utilisateurs. *[Pause légère.]*  
+        
+        Voici comment cela se déroule :  
+        - **Jour 1** : Comprendre et définir → Analyse du besoin, interviews utilisateurs, définition du Sprint Challenge.  
+        - **Jour 2** : Idéation → Brainstorming, matrice d’impact, sélection des meilleures idées.  
+        - **Jour 3** : Décider → Choix du concept final, création du story-board.  
+        - **Jour 4** : Prototyper → Réalisation d’un prototype interactif sur Figma.  
+        - **Jour 5** : Tester → Tests utilisateurs pour valider ou ajuster la solution.  
+        
+        L’objectif ? **Concevoir une solution centrée sur l’utilisateur**, rapidement testable et améliorable. *[Regard confiant, pause légère.]*  
+        
+        ---
+        
+        **🔍 Comprendre et définir (1,5 min)**  
+        Commençons par la base : **comprendre pour bien définir**.  
+        Nous avons analysé le besoin du commanditaire : AILIA veut devenir **“le GPS du parcours de soin”**, en simplifiant l’accès aux informations et aux appareillages grâce à un **parcours personnalisé**.  
+        
+        Les problématiques clés identifiées sont les suivantes :  
+        - Un **manque d’informations accessibles**.  
+        - Une **coordination insuffisante** entre médecins, orthoprothésistes et patients.  
+        - Un **parcours utilisateur trop long et décourageant**.  
+        
+        Cela nous a permis de définir notre **Sprint Challenge** :  
+        “**Comment orienter les patients pour améliorer la prescription d’appareillage, malgré une mauvaise coordination des acteurs de santé ?**” *[Pause légère, regard engageant.]*  
+        
+        ---
+        
+        **💡 Diverger et décider (1,5 min)**  
+        Avec un problème bien posé, il est temps de passer à la **génération d’idées**.  
+        Pour ça, nous avons utilisé plusieurs techniques :  
+        - **Benchmark** : Analyse de la concurrence et d’autres secteurs inspirants.  
+        - **Crazy 8’s** : Brainstorming rapide pour multiplier les idées.  
+        - **Matrice d’impact** : Sélection des idées les plus pertinentes, à la fois impactantes et faisables.  
+        
+        La solution retenue repose sur trois piliers :  
+        1. Un **questionnaire personnalisé** pour cerner les besoins du patient.  
+        2. Des **recommandations adaptées** : appareillages, médecins et témoignages ciblés.  
+        3. Un **suivi du parcours de soin** pour guider l’utilisateur du début à la fin. *[Pause légère, sourire léger.]*  
+        
+        ---
+        
+        **🔧 Prototyper et tester (2 min)**  
+        À ce stade, il fallait donner vie à nos idées.  
+        Nous avons réalisé :  
+        - Un **story-board** pour visualiser l’expérience utilisateur.  
+        - Un **prototype interactif sur Figma**, que nous avons testé avec des utilisateurs.  
+        
+        Voici les grandes lignes du prototype V1 :  
+        - **Page d’accueil** : Un bouton “Je me lance” qui guide vers le parcours personnalisé.  
+        - **Questionnaire fluide et clair** : Avec une barre de progression visible et des questions adaptées.  
+        - **Page “Recommandations personnalisées”** : Une timeline du parcours, des appareils suggérés et une liste de médecins.  
+        - **Témoignages inspirants** : Pour aider l’utilisateur à se projeter dans un parcours réussi.  
+        
+        *[Pause légère, regard engageant.]*  
+        
+        ---
+        
+        **📌 Tests utilisateurs (1,5 min)**  
+        Un prototype ne vaut rien sans validation terrain.  
+        Nous avons testé notre prototype auprès d’utilisateurs réels. Les retours ont été structurés en trois catégories :  
+        
+        ✅ **START** — Ce qui a été apprécié :  
+        - Un questionnaire fluide et pertinent.  
+        - Une page recommandations perçue comme concrète et utile.  
+        - Des témoignages rassurants qui aident à se projeter.  
+        
+        ❌ **STOP** — Ce qui a moins fonctionné :  
+        - Une page recommandations trop chargée, avec un manque de clarté sur l’enchaînement des étapes.  
+        - Une liste de médecins jugée trop longue, donnant une impression de résultats non personnalisés.  
+        
+        🔄 **CONTINUE** — Ce qui mérite d’être approfondi :  
+        - Améliorer l’UI des recommandations pour encourager davantage les clics.  
+        - Adapter les résultats selon la pathologie pour un suivi plus personnalisé.  
+        
+        *[Pause légère, regard engageant.]*  
+        
+        ---
+        
+        **🔄 (Bonus) Itérer et améliorer (1 min)**  
+        Après les tests, on ne s’arrête pas là. C’est là que la méthode agile prend le relais.  
+        Nous avons amorcé une version 2 du prototype, structurée autour des enseignements tirés des tests :  
+        - **Backlog JIRA** : Organisation en épics et user stories pour prioriser les fonctionnalités clés.  
+        - **Refonte UI globale** : Navigation plus fluide, affichage plus clair des recommandations.  
+        
+        L’objectif ? Préparer une version plus aboutie et plus efficace pour une prochaine série de tests.  
+        
+        *[Pause légère, sourire confiant.]*  
+        
+        ---
+        
+        **🎉 Conclusion (1 min)**  
+        Pour conclure, voici ce que je retiens de cette expérience.  
+        Cette formation m’a appris à construire un projet UX de A à Z, en utilisant des méthodes comme le **Design Sprint** et l’**Agile**.  
+        
+        J’ai surtout découvert la **puissance du travail collaboratif**, où chacun apporte sa pierre à l’édifice.  
+        Ensemble, on va **plus vite**, **plus loin**, et on crée des solutions qui répondent vraiment aux besoins des utilisateurs.  
+        
+        **Merci !** *[Sourire chaleureux, regard engageant.]*  
+        
+        ---
+        
+        ### Conseils pour utiliser le téléprompteur :
+        1. **Parle lentement** : Prends ton temps pour articuler chaque phrase.
+        2. **Marque des pauses légères** : Après chaque transition ou point clé, laisse une seconde ou deux pour que le public assimile.
+        3. **Utilise des gestes naturels** : Appuie tes mots avec des mouvements de main ou des expressions faciales pour rendre ta présentation plus vivante.
+        4. **Pratique avant** : Lis le texte plusieurs fois pour te familiariser avec le rythme et les transitions.
+        
+        Bonne présentation, Fanny Chérie ! 😊
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
